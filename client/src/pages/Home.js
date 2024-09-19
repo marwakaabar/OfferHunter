@@ -33,14 +33,14 @@ const Home = () => {
             <div className="home">
                 <div className="home-content">
                     <Maps postActive={postActive} searchValue={searchValue} />
-                    <SearchBox placeholder="Look for a deal !"
+                    <SearchBox placeholder="Find the Best Offers & Save Big Now!"
                         setSearchValue={setSearchValue} />
                     {
                         uid && (
                             <button className="post-button" onClick={() => {
                                 navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
                                     if (result.state === "denied" || result.state === "prompt") {
-                                        alert("Please Turn On The Geolocation !");
+                                        alert("Activate Geolocation and Let’s Explore Together!");
                                     } else {
                                         setPostAcive(true)
                                     }

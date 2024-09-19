@@ -52,56 +52,7 @@ const MessageList = ({uid,username,messages,img,id,changeMode}) => {
                                     
                                         )
             }
-            
-   {/*                 <li className="you">
-                    <div className="entete">
-                        <span className="status green"></span>
-                        <h2>Vincent</h2>
-                        <h3>10:12AM, Today</h3>
-                    </div>
-                    <div className="triangle"></div>
-                    <div className="message">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                    </div>
-                </li>
-                <li className="me">
-                    <div className="entete">
-                        <h3>10:12AM, Today</h3>
-                        <h2>Vincent</h2>
-                        <span className="status blue"></span>
-                    </div>
-                    <div className="triangle"></div>
-                    <div className="message">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                    </div>
-                </li>
-
-                 const isCurrentUser = (username,pass) => {
-                        if(username === pass ) return 'current-user'
-                        else return 'not-current-user'
-                    }
-
-                    return      <div> 
-                                <p>
-                                    {id}
-                                </p>
-                                <p>
-                                    {username}
-                                </p>
-                                <div>
-                                    {
-                                        messages.map ( 
-                                            (msg,key) => {
-                                                return <Message key = {key} {...msg} pass = { pass } />
-                                            }
-                                    
-                                        )
-                                    
-                                    }
-                                </div>
-                                </div>
-
-        */}       </ul>
+       </ul>
         
         </>
 

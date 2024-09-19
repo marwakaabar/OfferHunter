@@ -90,7 +90,7 @@ const Maps = ({ postActive, searchValue }) => {
         // checking if the geolocalisation is activated in the browser
         navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
             if (result.state === "denied") {
-                alert("Please Turn On The Geolocation !");
+                alert("Activate Geolocation and Let’s Explore Together!");
             } else {
                 map.locate().on("locationfound", function (e) {
                     // moving to the user location

@@ -64,7 +64,7 @@ const SignUpForm = () => {
         <>
             {formSubmit ? (<>
                 <SignInForm />
-                <h4 className="success" >Registration Successfully Submitted</h4>
+                <h4 className="success" >Your Registration Successfully Submitted</h4>
             </>) : (
 
                 <form action="" onSubmit={handleRegister} id="sign-up-form" >
@@ -74,6 +74,7 @@ const SignUpForm = () => {
                         type="text"
                         name="username"
                         id="username"
+                        placeholder="Enter your Username.."
                         onChange={(e) => setUsername(e.target.value)}
                         defaultValue=""
                     />
@@ -85,6 +86,7 @@ const SignUpForm = () => {
                         type="text"
                         name="email"
                         id="email"
+                        placeholder="Enter your E-mail.."
                         onChange={(e) => setEmail(e.target.value)}
                         defaultValue=""
                     />
@@ -96,6 +98,7 @@ const SignUpForm = () => {
                         type="password"
                         name="password"
                         id="password"
+                        placeholder="Enter your Password.."
                         onChange={(e) => setPassword(e.target.value)}
                         defaultValue=""
                     />
@@ -107,6 +110,7 @@ const SignUpForm = () => {
                         type="password"
                         name="password"
                         id="password-conf"
+                        placeholder="Enter your Password again to confirm.."
                         onChange={(e) => setcontrolPassword(e.target.value)}
                         defaultValue=""
                     />
@@ -115,9 +119,9 @@ const SignUpForm = () => {
                     <input type="checkbox" id="terms" />
                     <label htmlFor="terms">
                         Agree to
-                        <a href="/"
+                        <a href="/TERMS&CONDITIONS"
                             target="_blank"
-                            rel="nooopner noreferrer"> Terms and Conditions
+                            rel="nooopner noreferrer"> OfferHunter's Terms and Conditions
                         </a>
                     </label>
                     <div className='terms error'></div>

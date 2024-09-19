@@ -4,19 +4,19 @@ import { changeCurrentThread , addThread , setThreads , addMessage , addMessages
 
 
 const initialState = {
-                            currentThread : 'dealfinder' ,
+                            currentThread : 'OfferHunter' ,
                             
                             isMessaging : false,
     
                             threads : 
                             [
-                                {   id : 'dealfinder',
-                                    username : 'DEALFINDER TEAM',
-                                    img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_01.jpg',
-                                    messages : [ {username : 'DEALFINDERTEAM', text : 'you have no contacts! you need to contact someone from a post inorder to see his chat!',
-                                    img:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_01.jpg', timestamp : new Date()}
+                                {   id : 'OfferHunter',
+                                    username : 'OfferHunter team',
+                                    img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_03.jpg',
+                                    messages : [ {username : 'OfferHunter team', text : 'It seems you haven’t made any connections yet! To start chatting, you’ll need to reach out to someone from a post. Make a move and start the conversation!',
+                                    img:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_03.jpg', timestamp : new Date()}
                                                 ],
-                                    lastMessage : 'nothing to see here',
+                                    lastMessage : 'YOU HAVE NO MSGS',
                                 }
                                 ]
                             }

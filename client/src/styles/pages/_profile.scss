@@ -146,6 +146,29 @@
     }
   }
 
+  .img-container1 {
+    display: grid;
+    align-items: center;
+    height: 100%;
+
+    img {
+      height: 450px;
+
+      @media screen and(max-width: 1050px) {
+        height: 220px;
+      }
+
+      @media screen and(max-width: 950px) {
+        height: 200px;
+      }
+
+      @media screen and(max-width: 885px) {
+        display: none;
+      }
+    }
+  }
+
+
   .update-container {
     display: grid;
     grid-template-columns: 50% 50%;

@@ -46,6 +46,7 @@ const SignInForm = () => {
                 type="text"
                 name="email"
                 id="email"
+                placeholder="Enter your E-mail.."
                 onChange={(e) => setEmail(e.target.value)}
                 defaultValue=""
             />
@@ -57,6 +58,7 @@ const SignInForm = () => {
                 type="password"
                 name="password"
                 id="password"
+                placeholder="Enter your password.."
                 onChange={(e) => setPassword(e.target.value)}
                 defaultValue=""
             />

@@ -1,9 +1,11 @@
+$color-8: #5b5328; /* Replace with your desired color */
+
 nav {
   position: fixed;
   width: 100%;
   height: 45px;
   border-radius: 6px;
-  box-shadow: 18px 1px 0px $color-1, 22px 4px 0px 0px $shadow;
+  box-shadow: 18px 1px 0px $color-8, 22px 4px 0px 0px $shadow;
   z-index: 0;
   top: 0;
 
@@ -11,6 +13,7 @@ nav {
     padding: 0 20px;
   }
 
+  
   &::after {
     content: "";
     height: 45px;
@@ -40,6 +43,7 @@ nav {
         transform: translate(10px, 4px);
         font-size: 1.75rem;
         font-family: $font-3;
+        color: #f2c510;
       }
 
       img {

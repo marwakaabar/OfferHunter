@@ -39,13 +39,13 @@ const Contact = () => {
                         <h1>Contact Us :</h1>
                         <form className="message-form" onSubmit={apiCall}>
                             <br /><br />
-                            <input className="message-fields" placeholder='Enter Your Full Name' ref={nameRef} ></input>
+                            <input className="message-fields" placeholder='Please Enter Your Full Name' ref={nameRef} ></input>
                             <br /><br />
-                            <input className="message-fields" placeholder='Enter Your Contact Email' ref={emailRef}  ></input>
+                            <input className="message-fields" placeholder='Please Enter Your Contact Email' ref={emailRef}  ></input>
                             <br /><br />
-                            <textarea className="message" placeholder='Enter Your Message Here' ref={bodyRef} ></textarea>
+                            <textarea className="message" placeholder='Please Enter Your Message Here' ref={bodyRef} ></textarea>
                             <br /><br />
-                            <button disabled={contacted}>CONTACT</button>
+                            <button disabled={contacted}>CONTACT US</button>
                         </form>
                     </div>}
             </div>
