@@ -13,10 +13,14 @@ const LeftNav = () => {
                        <div><img src="/img/icons/home.svg" alt="home" /></div> <div><h3>Home</h3></div> 
                     </NavLink>
                     <br />
-                    <NavLink to='/profile' exact activeClassName="active-left-nav">
+                    {/* <NavLink to='/profile' exact activeClassName="active-left-nav">
                         <img src="/img/icons/user.svg" alt="user" />
                         <h3>Profile</h3>
-                    </NavLink>
+                    </NavLink> */}
+                     <NavLink to={uid ? '/profile' : '/profile'} exact activeClassName="active-left-nav">
+                <img src="/img/icons/user.svg" alt="user" />
+                <h3>{uid ? 'Profile' : 'Login'}</h3>
+            </NavLink>
                     {
                         uid && (<NavLink to='/chat' exact activeClassName="active-left-nav">
                             <img src="/img/icons/message1.svg" alt="chat" />
@@ -29,7 +33,6 @@ const LeftNav = () => {
                             <h3>Cart</h3>
                         </NavLink>)
                     }
-                    <br /><br />
                     <NavLink to="/contact" exact activeClassName="active-left-nav">
                         <div>
                             <img style={{
@@ -38,7 +41,14 @@ const LeftNav = () => {
                         </div>
                         <h3>Report</h3>
                     </NavLink>
-
+                    {/* <NavLink to="/article" exact activeClassName="active-left-nav">
+                        <div>
+                            <img style={{
+                                marginLeft: "4px",
+                            }} src="/img/icons/article.svg" alt="article" />
+                        </div>
+                        <h3>Articles</h3>
+                    </NavLink> */}
                 </div>
             </div>
         </div>

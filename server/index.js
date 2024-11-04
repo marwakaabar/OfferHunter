@@ -3,6 +3,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require("body-parser");
 const express = require('express');
 const userRoutes = require('../routes/userRoutes');
+const articleRoutes = require('../routes/articleRoutes');
 const postRoutes = require('../routes/postroutes');
 const messages = require('../routes/messages');
 const reports = require('../routes/reports');
@@ -51,6 +52,7 @@ app.get('/jwtid', requireAuth, (req, res) => {
 
 // routes
 app.use('/api/user', userRoutes);
+app.use('/api/articles', articleRoutes);
 app.use('/api/post', postRoutes);
 app.use("/api/users",users);
 app.use("/api/posts",posts);
